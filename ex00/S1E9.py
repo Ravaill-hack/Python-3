@@ -6,9 +6,8 @@ class Character(ABC):
     @abstractmethod
     def __init__(self, first_name: str, is_alive: bool = True):
         """The constructor for the Character class"""
-        self.first_name = first_name 
+        self.first_name = first_name
         self.is_alive = is_alive
-
 
     def die(self):
         """A method that makes the character die"""
@@ -21,4 +20,3 @@ class Stark(Character):
         """The constructor for the Stark class"""
         super().__init__(first_name, is_alive)
         self.family_name = "Stark"
-

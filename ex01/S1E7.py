@@ -10,13 +10,11 @@ class Baratheon(Character):
         self.eyes = "brown"
         self.hairs = "dark"
 
-
     def __str__(self):
         """
         Depiction of the character
         """
         return f"Vector: ({self.family_name}, {self.eyes}, {self.hairs})"
-
 
     def __repr__(self):
         """
@@ -34,20 +32,17 @@ class Lannister(Character):
         self.eyes = "blue"
         self.hairs = "light"
 
-
     def __str__(self):
         """
         Depiction of the character
         """
         return f"Vector: ({self.family_name}, {self.eyes}, {self.hairs})"
 
-
     def __repr__(self):
         """
         Returns the string depicting the character.
         """
         return self.__str__()
-
 
     @classmethod
     def create_lannister(cls, first_name: str, is_alive: bool = True):
